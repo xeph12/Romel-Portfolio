@@ -1,0 +1,426 @@
+body{
+    background-color: rgb(5, 5, 5);
+    margin: 0px;
+}
+
+.Container{
+    margin: auto;
+    justify-content: center;
+    
+}
+
+section{
+    color: aliceblue;
+    background-color: #000000;
+    min-width: 100vw;
+}
+
+.title{
+    margin-top: 30px;
+    font-size: 4vw;
+    text-align: center;
+    color: #e2e2b6;
+}
+
+.About-Me{
+    margin: auto;
+}
+.About-Me > .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5vw 15vw 5vw 10vw;
+    grid-template-areas: 
+    'who RJ'
+    'p1 RJ'
+    'p2 .'
+    'contact socials';
+    margin-left: 10%;
+    align-items: center;
+}
+
+.who{
+    font-size: 3vw;
+    grid-area: who;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.p1{
+    grid-area: p1;
+    margin: 0px;
+    font-size: 1.7vw;
+
+}
+
+.p2{
+    grid-area: p2;
+    margin: 0px;
+    font-size: 1.7vw;
+    margin-bottom: 10px;
+}
+
+.contact{
+    grid-area: contact;
+    margin: 0px;
+    font-size: 1.5vw;
+}
+
+.RJphoto{
+    grid-area: RJ;
+    width: 20vw;
+    height: auto;
+    border-radius: 100px;   
+    justify-self: center;
+}
+
+.socials{
+    grid-area: socials;
+    bottom: 50px;
+    display: flex;  
+    gap: 15px;
+    justify-self: center;
+}
+
+.socials > img{
+    width: 5vw;
+    height: auto;
+}
+
+.Skills > .container > img{
+    width: 10vw;
+    height: auto;
+}
+
+.con{
+    margin: auto;
+    width: 60vw;
+    height: auto;
+}
+
+.Skills > .con> .container{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-rows: repeat(2, auto);
+    gap: 50px
+}
+
+.Works > .container{
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    gap: 50px;
+    margin-right: 100px;
+}
+.Works > .container > img {
+    width: 15vw;
+    height: auto;
+}
+
+.Works > .container > div > a {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #6eacda;
+}
+
+.Works > .container > div > h1 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #6eacda;
+}
+
+.Works > .container > div > p {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.Certificates > .con> .container{
+        justify-content: center;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+}
+
+.Certificates > .con > .container > img{
+    width: 20vw;
+    height: auto;
+}
+
+.hiddenblur{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.showblur{
+    opacity: 1;
+    filter: blur(0px);
+
+}
+
+.hiddenslideleft{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.showslideleft{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+.hiddenslideright{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.showslideright{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+.social:nth-child(1){
+    transition-delay: 200ms;
+}
+.social:nth-child(2){
+    transition-delay: 400ms;
+}
+.social:nth-child(3){
+    transition-delay: 600ms;
+}
+
+.contain:nth-child(1){
+    transition-delay: 200ms;
+}
+
+.contain:nth-child(2){
+    transition-delay: 400ms;
+}
+
+.contain:nth-child(3){
+    transition-delay: 600ms;
+}
+
+.contain:nth-child(4){
+    transition-delay: 200ms;
+}
+
+.contain:nth-child(5){
+    transition-delay: 400ms;
+}
+
+.contain:nth-child(6){
+    transition-delay: 600ms;
+}
+
+@media screen and (max-width: 995px){
+
+    .About-Me > .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5vw 15vw 5vw 10vw;
+        grid-template-areas: 
+        'who RJ'
+        'p1 RJ'
+        'p2 .'
+        'contact socials';
+    
+        left: 100px;
+        align-items: center;
+    }
+    
+    .who{
+        font-size: 3vw;
+        grid-area: who;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+    
+    .p1{
+        grid-area: p1;
+        margin: 0px;
+        font-size: 1.7vw;
+    
+    }
+    
+    .p2{
+        grid-area: p2;
+        margin: 0px;
+        font-size: 1.7vw;
+        margin-bottom: 10px;
+    }
+    
+    .contact{
+        grid-area: contact;
+        margin: 0px;
+        font-size: 1.5vw;
+    }
+    
+    .RJphoto{
+        grid-area: RJ;
+        width: 20vw;
+        height: auto;
+        border-radius: 100px;   
+        justify-self: center;
+    }
+    
+    .socials{
+        grid-area: socials;
+        bottom: 50px;
+        display: flex;  
+        gap: 15px;
+        justify-self: center;
+    }
+    
+    .socials > img{
+        width: 5vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .title{
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+        color: #e2e2b6;
+    }
+
+    .About-Me > .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 10vh auto auto auto auto;
+        grid-template-areas: 
+        'RJ'
+        'socials'
+        'who'
+        'p1'
+        'p2'
+        'contact';
+
+        align-items: center;
+        
+    }
+    
+    .who{
+        font-size: 30px;
+        grid-area: who;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    
+    .p1{
+        grid-area: p1;
+        margin-bottom: 10px;
+        font-size: 15px;
+        
+    }
+    
+    .p2{
+        grid-area: p2;
+        margin: 0px;
+        font-size: 15px;
+        margin-bottom: 10px;
+
+    }   
+    
+    .contact{
+        grid-area: contact;
+        margin: 0px;
+        font-size: 15px;
+
+    }
+    
+    .RJphoto{
+        grid-area: RJ;
+        width: 150px;
+        height: auto;
+        border-radius: 100px;   
+        justify-self: center;
+    }
+    
+    .socials{
+        grid-area: socials;
+        display: flex;  
+        gap: 15px;
+        justify-self: center;
+        margin: 20px;
+        margin-top: 40px;
+        
+    }
+    
+    .socials > div > a > img{
+        width: 10vw;
+        height: auto;
+
+    }
+
+    .Skills > .con > .container > div > img{
+        width: 110px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .con{
+        margin: auto;
+        width: auto;
+        height: auto;
+
+    }
+    
+    .Skills > .con> .container{
+        grid-template-columns: repeat(2, 120px);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        align-content: center;
+        margin: auto;
+    }
+
+    .Works > .container{
+        margin-left: 50px;
+    }
+
+    .Works > .container > div > a {
+        font-size: 2rem;
+        margin: 0;
+        margin-bottom: 10px;
+        color: #6eacda;
+    }
+    
+    .Works > .container > div > h1 {
+        font-size: 2rem;
+        margin: 0;
+        margin-bottom: 10px;
+        color: #6eacda;
+    }
+    
+    .Works > .container > div > p {
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .Certificates > .con {
+        width: 240px;
+        margin: auto;
+
+    }
+    .Certificates > .con > .container > img{
+        width: 220px;
+        height: auto;
+    }
+}
